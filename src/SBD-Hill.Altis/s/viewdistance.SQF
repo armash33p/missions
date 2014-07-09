@@ -1,0 +1,1 @@
+setViewDistance s_param_vd;

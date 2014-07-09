@@ -1,0 +1,603 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_Gamma",
+		"a3_characters_f",
+		"A3_Modules_F_Sites",
+		"a3_map_altis",
+		"A3_Structures_F_Mil_BagBunker",
+		"A3_Structures_F_Civ_Camping"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_Gamma",
+		"a3_characters_f",
+		"A3_Modules_F_Sites",
+		"A3_Structures_F_Mil_BagBunker",
+		"A3_Structures_F_Civ_Camping",
+		"a3_map_altis"
+	};
+	randomSeed=11823142;
+	class Intel
+	{
+		briefingName="F3";
+		overviewText="*** Insert mission description here. ***";
+		startWeather=0;
+		startWind=0;
+		forecastWeather=1;
+		forecastWind=0;
+		forecastWaves=0;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=5;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9726.1719,14.449145,12601.036};
+					azimut=46.106716;
+					id=0;
+					side="WEST";
+					vehicle="B_G_Soldier_SL_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitFIA_ASL_SL";
+					init="GrpFIA_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					description="FIA Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9726.7686,14.3815,12598.114};
+					azimut=46.106518;
+					id=1;
+					side="WEST";
+					vehicle="B_G_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_ASL_M";
+					init="GrpFIA_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="FIA Alpha Medic";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9715.1133,14.65719,12590.433};
+					azimut=46.106518;
+					id=2;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A1_FTL";
+					init="GrpFIA_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9715.8594,14.647862,12587.163};
+					azimut=46.106518;
+					id=3;
+					side="WEST";
+					vehicle="B_G_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AR";
+					init="GrpFIA_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9717.9492,14.641996,12584.852};
+					azimut=46.106518;
+					id=4;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AAR";
+					init="GrpFIA_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9720.1387,14.653279,12582.539};
+					azimut=46.106518;
+					id=5;
+					side="WEST";
+					vehicle="B_G_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AT";
+					init="GrpFIA_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9703.6055,14.666155,12579.656};
+					azimut=46.106518;
+					id=6;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A2_FTL";
+					init="GrpFIA_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9704.124,14.526447,12576.359};
+					azimut=46.106518;
+					id=7;
+					side="WEST";
+					vehicle="B_G_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AR";
+					init="GrpFIA_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9706.1982,14.557163,12574.072};
+					azimut=46.106518;
+					id=8;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AAR";
+					init="GrpFIA_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9708.4873,14.608009,12571.676};
+					azimut=46.106518;
+					id=9;
+					side="WEST";
+					vehicle="B_G_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AT";
+					init="GrpFIA_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9691.1885,14.580615,12567.766};
+					azimut=46.106518;
+					id=10;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A3_FTL";
+					init="GrpFIA_A3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9691.79,14.48148,12564.351};
+					azimut=46.106518;
+					id=11;
+					side="WEST";
+					vehicle="B_G_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A3_AR";
+					init="GrpFIA_A3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9693.8467,14.484693,12561.904};
+					azimut=46.106518;
+					id=12;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A3_AAR";
+					init="GrpFIA_A3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9696.0664,14.562222,12559.473};
+					azimut=46.106518;
+					id=13;
+					side="WEST";
+					vehicle="B_G_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A3_AT";
+					init="GrpFIA_A3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9731.042,14.500932,12594.155};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="Animal_sheep";
+							parentCls="Site_Ambient";
+							typeName="siteType";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="Site_Ambient";
+							typeName="animalCount";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="Site_Ambient";
+							typeName="radius";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="Site_Ambient";
+							typeName="animalsInRadius";
+						};
+					};
+					id=14;
+					side="LOGIC";
+					vehicle="Site_Ambient";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=14;
+		class Item0
+		{
+			position[]={9936.4639,13.202839,12134.251};
+			azimut=90;
+			id=15;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item1
+		{
+			position[]={10023.31,13.002892,12037.864};
+			id=16;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item2
+		{
+			position[]={10228.746,13.873142,12218.066};
+			azimut=270;
+			id=17;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item3
+		{
+			position[]={10147.888,14.807653,12312.657};
+			azimut=180;
+			id=18;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item4
+		{
+			position[]={10049.728,12.937137,12229.606};
+			azimut=135;
+			id=19;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item5
+		{
+			position[]={10129.122,13.612276,12125.824};
+			azimut=-45;
+			id=20;
+			side="EMPTY";
+			vehicle="Land_BagBunker_Tower_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item6
+		{
+			position[]={10088.718,12.664186,12160.965};
+			azimut=149.239;
+			id=21;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item7
+		{
+			position[]={10092.056,12.537334,12157.367};
+			azimut=149.239;
+			id=22;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item8
+		{
+			position[]={10102.308,12.359213,12159.615};
+			azimut=149.239;
+			id=23;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item9
+		{
+			position[]={10098.884,12.318152,12163.479};
+			azimut=149.239;
+			id=24;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item10
+		{
+			position[]={10095.108,12.336433,12167.074};
+			azimut=149.239;
+			id=25;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item11
+		{
+			position[]={10096.183,12.382297,12153.681};
+			azimut=149.239;
+			id=26;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item12
+		{
+			position[]={10105.306,12.324315,12155.598};
+			azimut=149.239;
+			id=27;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+		class Item13
+		{
+			position[]={10099.808,12.368048,12149.923};
+			azimut=149.239;
+			id=28;
+			side="EMPTY";
+			vehicle="Land_TentDome_F";
+			leader=1;
+			skill=0.60000002;
+			description="FIA Alpha Squad Leader";
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={10079.055,12.07384,12197.23};
+			name="m_intro_uav";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={10046.03,12.295718,12111.987};
+			name="m_red";
+			text="CSAT Camp";
+			type="mil_objective";
+			colorName="ColorEAST";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={10059.646,12.559239,12124.716};
+			a=200;
+			b=200;
+			angle=49.103199;
+			rectangular=1;
+			activationBy="LOGIC";
+			activationType="NOT PRESENT";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="dac1";
+			expCond="time > 60;";
+			expActiv="fun = [""dac1"", [1,0,0],[2,2,10,2],[],[],[],[1,1,0,0]] spawn DAC_Zone;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=8428644;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=4674277;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=6586695;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

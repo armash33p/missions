@@ -1,0 +1,978 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_characters_f",
+		"A3_Characters_F_Gamma",
+		"a3_map_altis",
+		"A3_Modules_F_Intel"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_Gamma",
+		"a3_characters_f",
+		"A3_Modules_F_Intel",
+		"a3_map_altis"
+	};
+	randomSeed=11823142;
+	class Intel
+	{
+		briefingName="SBD - Assaulting a Hill";
+		overviewText="A brief Battle Drill for repeatable practice assaulting a fixed enemy hilltop position.";
+		resistanceWest=0;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=5;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Groups
+	{
+		items=13;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={9220.6416,15.221865,11964.518};
+					azimut=-74.54747;
+					id=0;
+					side="WEST";
+					vehicle="B_G_Soldier_SL_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="UnitFIA_ASL_SL";
+					init="GrpFIA_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					description="FIA Alpha Squad Leader";
+				};
+				class Item1
+				{
+					position[]={9222.8447,15.201209,11966.51};
+					azimut=-74.547516;
+					id=1;
+					side="WEST";
+					vehicle="B_G_medic_F";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_ASL_M";
+					init="GrpFIA_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+					description="FIA Alpha Medic";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9235.3975,15.173215,11960.405};
+					azimut=-74.547516;
+					id=2;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A1_FTL";
+					init="GrpFIA_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9237.8193,15.19128,11962.722};
+					azimut=-74.547516;
+					id=3;
+					side="WEST";
+					vehicle="B_G_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AR";
+					init="GrpFIA_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9238.7422,15.194972,11965.688};
+					azimut=-74.547516;
+					id=4;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AAR";
+					init="GrpFIA_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9239.625,15.198502,11968.755};
+					azimut=-74.547516;
+					id=5;
+					side="WEST";
+					vehicle="B_G_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A1_AT";
+					init="GrpFIA_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 1 Rifleman (AT)";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9250.5332,15.178628,11956.002};
+					azimut=-74.547516;
+					id=6;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A2_FTL";
+					init="GrpFIA_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9253.1006,15.177595,11958.131};
+					azimut=-74.547516;
+					id=7;
+					side="WEST";
+					vehicle="B_G_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AR";
+					init="GrpFIA_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9254.0127,15.173947,11961.077};
+					azimut=-74.547516;
+					id=8;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AAR";
+					init="GrpFIA_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9254.9092,15.170241,11964.269};
+					azimut=-74.547516;
+					id=9;
+					side="WEST";
+					vehicle="B_G_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A2_AT";
+					init="GrpFIA_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 2 Rifleman (AT)";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9267.0967,15.143871,11951.377};
+					azimut=-74.547516;
+					id=10;
+					side="WEST";
+					vehicle="B_G_Soldier_TL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitFIA_A3_FTL";
+					init="GrpFIA_A3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Fireteam Leader";
+				};
+				class Item1
+				{
+					position[]={9269.7266,15.140364,11953.634};
+					azimut=-74.547516;
+					id=11;
+					side="WEST";
+					vehicle="B_G_soldier_AR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A3_AR";
+					init="GrpFIA_A3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Automatic Rifleman";
+				};
+				class Item2
+				{
+					position[]={9270.7852,15.136858,11956.661};
+					azimut=-74.547516;
+					id=12;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A3_AAR";
+					init="GrpFIA_A3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Assistant Automatic Rifleman";
+				};
+				class Item3
+				{
+					position[]={9271.7393,15.133042,11959.808};
+					azimut=-74.547516;
+					id=13;
+					side="WEST";
+					vehicle="B_G_Soldier_LAT_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitFIA_A3_AT";
+					init="GrpFIA_A3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					description="FIA Alpha 3 Rifleman (AT)";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8184.3135,114.159,11921.375};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="3";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="t3";
+							parentCls="ModuleTaskCreate_F";
+							typeName="ID";
+						};
+						class Item2
+						{
+							value="Seize Hill 117";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Title";
+						};
+						class Item3
+						{
+							value="Eliminate all AAF on <marker name=""m_hill117"">Hill 117</marker>";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Description";
+						};
+						class Item4
+						{
+							value="";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Marker";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Destination";
+						};
+						class Item6
+						{
+							value="CREATED";
+							parentCls="ModuleTaskCreate_F";
+							typeName="State";
+						};
+					};
+					id=14;
+					side="LOGIC";
+					vehicle="ModuleTaskCreate_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=0;
+					synchronizations[]={4};
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9212.4473,109.79,11466.238};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="3";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="t1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="ID";
+						};
+						class Item2
+						{
+							value="Seize Riga Hill";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Title";
+						};
+						class Item3
+						{
+							value="Eliminate all AAF on <marker name=""m_riga"">Riga Hill</marker>";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Description";
+						};
+						class Item4
+						{
+							value="";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Marker";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Destination";
+						};
+						class Item6
+						{
+							value="CREATED";
+							parentCls="ModuleTaskCreate_F";
+							typeName="State";
+						};
+					};
+					id=15;
+					side="LOGIC";
+					vehicle="ModuleTaskCreate_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=1;
+					synchronizations[]={5};
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8948.6084,67.976341,11868.885};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="3";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="t2";
+							parentCls="ModuleTaskCreate_F";
+							typeName="ID";
+						};
+						class Item2
+						{
+							value="Seize Chapel Hill";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Title";
+						};
+						class Item3
+						{
+							value="Eliminate all AAF on <marker name=""m_chill"">Chapel Hill</marker>";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Description";
+						};
+						class Item4
+						{
+							value="";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Marker";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleTaskCreate_F";
+							typeName="Destination";
+						};
+						class Item6
+						{
+							value="CREATED";
+							parentCls="ModuleTaskCreate_F";
+							typeName="State";
+						};
+					};
+					id=16;
+					side="LOGIC";
+					vehicle="ModuleTaskCreate_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=2;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8948.7939,66.973167,11853.314};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="SUCCEEDED";
+							parentCls="ModuleTaskSetState_F";
+							typeName="State";
+						};
+					};
+					id=17;
+					side="LOGIC";
+					vehicle="ModuleTaskSetState_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=3;
+					synchronizations[]={2,7};
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8186.3984,112.33344,11893.797};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="SUCCEEDED";
+							parentCls="ModuleTaskSetState_F";
+							typeName="State";
+						};
+					};
+					id=18;
+					side="LOGIC";
+					vehicle="ModuleTaskSetState_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=4;
+					synchronizations[]={0,6};
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9212.043,109.79,11446.117};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="SUCCEEDED";
+							parentCls="ModuleTaskSetState_F";
+							typeName="State";
+						};
+					};
+					id=19;
+					side="LOGIC";
+					vehicle="ModuleTaskSetState_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=5;
+					synchronizations[]={1,8};
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9844.8701,13.451382,12030.398};
+					id=20;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="DAC_Auto_UnitCount = [14,8];";
+					description="DAC Dynamic Group Sizing";
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					presenceCondition="false";
+					position[]={9849.5723,12.972443,11908.535};
+					id=21;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="dac_debug";
+					init="DAC_Marker = 1; DAC_Com_Values = [1,2,0,0];";
+					description="DAC Debug Settings";
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9851.0977,12.060719,11823.94};
+					id=22;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="taskcnt";
+					init="task_count = 0;";
+					description="Completed Task Counter";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=11;
+		class Item0
+		{
+			position[]={9137.5166,16.858782,11904.722};
+			name="m_intro_uav";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={9209.3711,109.79,11469.97};
+			name="m_h1";
+			text="Hill 112";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGUER";
+			fillName="SolidBorder";
+			a=100;
+			b=100;
+			drawBorder=1;
+		};
+		class Item2
+		{
+			position[]={8942.2236,68.579369,11863.742};
+			name="m_h2";
+			text="Chapel Hill";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGUER";
+			fillName="SolidBorder";
+			a=100;
+			b=100;
+			drawBorder=1;
+		};
+		class Item3
+		{
+			position[]={8161.9697,112.61137,11962.767};
+			name="m_h3";
+			text="Hill 117";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGUER";
+			fillName="SolidBorder";
+			a=200;
+			b=200;
+			drawBorder=1;
+		};
+		class Item4
+		{
+			position[]={8940.959,71.785355,11861.171};
+			name="m_chill";
+			text="Chapel Hill";
+			type="mil_objective";
+			colorName="ColorRed";
+		};
+		class Item5
+		{
+			position[]={9203.1074,109.79,11461.285};
+			name="m_riga";
+			text="Riga Hill";
+			type="mil_objective";
+			colorName="ColorRed";
+		};
+		class Item6
+		{
+			position[]={8174.1055,116.92296,11932.436};
+			name="m_hill117";
+			text="Hill 117";
+			type="mil_objective";
+			colorName="ColorRed";
+		};
+		class Item7
+		{
+			position[]={8561.5928,38.527275,12438.748};
+			name="m_border_n";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="FDiagonal";
+			a=1200;
+			b=100;
+		};
+		class Item8
+		{
+			position[]={9661.2568,12.409396,11739.513};
+			name="m_border_e";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="FDiagonal";
+			a=600;
+			b=100;
+			angle=90;
+		};
+		class Item9
+		{
+			position[]={7463.3232,19.339609,11737.972};
+			name="m_border_w";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="FDiagonal";
+			a=600;
+			b=100;
+			angle=90;
+		};
+		class Item10
+		{
+			position[]={8561.5938,42.068855,11052.236};
+			name="m_border_s";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="FDiagonal";
+			a=1200;
+			b=100;
+		};
+	};
+	class Sensors
+	{
+		items=9;
+		class Item0
+		{
+			position[]={8931.9482,68.127655,11865.502};
+			rectangular=1;
+			activationBy="LOGIC";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="dac_1";
+			expCond="time > 60;";
+			expActiv="fun = [""dac_1"",[1,0,0],[""6"",2,24,4],[],[],[],[2,2,6,0,2]] spawn DAC_Zone;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={9208.0439,109.79,11453.527};
+			a=100;
+			b=100;
+			rectangular=1;
+			activationBy="LOGIC";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="dac_2";
+			expCond="time > 60;";
+			expActiv="fun = [""dac_2"",[2,0,0],[""8"",2,32,4],[],[],[],[2,2,7,0,2]] spawn DAC_Zone;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={8145.5835,115.26472,11925.002};
+			a=100;
+			b=100;
+			rectangular=1;
+			activationBy="LOGIC";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="dac_3";
+			expCond="time > 60;";
+			expActiv="fun = [""dac_3"",[3,0,0],[""10"",2,40,4],[],[],[],[2,2,7,0,2]] spawn DAC_Zone;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={8146.5859,114.93358,11915.351};
+			a=300;
+			b=300;
+			activationBy="GUER";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="t1";
+			expCond="(time > 180) && this";
+			expActiv="task_count = task_count + 1;";
+			class Effects
+			{
+			};
+			synchronizations[]={4};
+			syncId=6;
+		};
+		class Item4
+		{
+			position[]={8926.2559,65.971291,11855.229};
+			a=200;
+			b=200;
+			activationBy="GUER";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="t2";
+			expCond="(time > 180) && this";
+			expActiv="task_count = task_count + 1;";
+			class Effects
+			{
+			};
+			synchronizations[]={3};
+			syncId=7;
+		};
+		class Item5
+		{
+			position[]={9196.5498,109.79,11477.738};
+			a=200;
+			b=200;
+			activationBy="GUER";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="t3";
+			expCond="(time > 180) && this";
+			expActiv="task_count = task_count + 1;";
+			class Effects
+			{
+			};
+			synchronizations[]={5};
+			syncId=8;
+		};
+		class Item6
+		{
+			position[]={8588.6738,49.705448,11793.068};
+			a=1000;
+			b=1000;
+			activationBy="GUER";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expCond="(time > 180) && this";
+			class Effects
+			{
+				track="LeadTrack06_F_EPC";
+			};
+		};
+		class Item7
+		{
+			position[]={8606.3213,47.04073,11793.066};
+			a=1000;
+			b=1000;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			type="LOOSE";
+			age="UNKNOWN";
+			expCond="(time > 180) && this && task_count == 0";
+			class Effects
+			{
+				track="EventTrack02_F_Curator";
+			};
+		};
+		class Item8
+		{
+			position[]={8599.9922,51.032322,11780.828};
+			a=1000;
+			b=1000;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			expCond="(time > 180) && this && task_count > 0";
+			class Effects
+			{
+				track="LeadTrack06b_F_EPC";
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=8428644;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=4674277;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=6586695;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
