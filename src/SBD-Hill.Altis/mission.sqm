@@ -6,13 +6,17 @@ class Mission
 		"a3_characters_f",
 		"A3_Characters_F_Gamma",
 		"a3_map_altis",
-		"A3_Modules_F_Intel"
+		"A3_Modules_F_Intel",
+		"A3_Characters_F_Bootcamp",
+		"A3_Modules_F"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_Gamma",
 		"a3_characters_f",
+		"A3_Characters_F_Bootcamp",
 		"A3_Modules_F_Intel",
+		"A3_Modules_F",
 		"a3_map_altis"
 	};
 	randomSeed=11823142;
@@ -735,7 +739,9 @@ class Mission
 		items=9;
 		class Item0
 		{
-			position[]={8931.9482,68.127655,11865.502};
+			position[]={8934.5371,68.363022,11860.324};
+			a=30;
+			b=30;
 			rectangular=1;
 			activationBy="LOGIC";
 			activationType="NOT PRESENT";
@@ -743,16 +749,14 @@ class Mission
 			age="UNKNOWN";
 			name="dac_1";
 			expCond="time > 60;";
-			expActiv="fun = [""dac_1"",[1,0,0],[""6"",2,24,4],[],[],[],[2,2,6,0,2]] spawn DAC_Zone;";
+			expActiv="fun = [""dac_1"",[1,0,0],[""3"",2,24,4],[],[],[],[2,2,6,0,2]] spawn DAC_Zone;";
 			class Effects
 			{
 			};
 		};
 		class Item1
 		{
-			position[]={9208.0439,109.79,11453.527};
-			a=100;
-			b=100;
+			position[]={9209.5977,109.79,11456.634};
 			rectangular=1;
 			activationBy="LOGIC";
 			activationType="NOT PRESENT";
@@ -760,7 +764,7 @@ class Mission
 			age="UNKNOWN";
 			name="dac_2";
 			expCond="time > 60;";
-			expActiv="fun = [""dac_2"",[2,0,0],[""8"",2,32,4],[],[],[],[2,2,7,0,2]] spawn DAC_Zone;";
+			expActiv="fun = [""dac_2"",[2,0,0],[""4"",2,32,4],[],[],[],[2,2,7,0,2]] spawn DAC_Zone;";
 			class Effects
 			{
 			};
@@ -777,7 +781,7 @@ class Mission
 			age="UNKNOWN";
 			name="dac_3";
 			expCond="time > 60;";
-			expActiv="fun = [""dac_3"",[3,0,0],[""10"",2,40,4],[],[],[],[2,2,7,0,2]] spawn DAC_Zone;";
+			expActiv="fun = [""dac_3"",[3,0,0],[""4"",2,40,4],[],[],[],[2,2,7,0,2]] spawn DAC_Zone;";
 			class Effects
 			{
 			};
