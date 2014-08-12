@@ -54,7 +54,7 @@ if(isServer || (str player == "HC")) then {
 	if(isNil "DAC_Player_Marker")	then {		DAC_Player_Marker	= false										};
 	if(isNil "DAC_Direct_Start")	then {		DAC_Direct_Start	= false										};
 	if(isNil "DAC_Activate_Sound")	then {		DAC_Activate_Sound	= false										};
-	if(isNil "DAC_Auto_UnitCount")	then {		DAC_Auto_UnitCount	= [8,10]									};
+	if(isNil "DAC_Auto_UnitCount")	then {		DAC_Auto_UnitCount	= [14,8]									};
 	if(isNil "DAC_Player_Support")	then {		DAC_Player_Support	= [10,[4,2000,3,1000]]						};
 	if(isNil "DAC_SaveDistance")	then {		DAC_SaveDistance	= [500,["DAC_Save_Pos"]]					};
 	if(isNil "DAC_Radio_Max")		then {		DAC_Radio_Max		= DAC_AI_Level								};

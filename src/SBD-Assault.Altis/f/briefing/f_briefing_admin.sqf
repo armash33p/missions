@@ -8,8 +8,7 @@
 _briefing ="
 <br/>
 ADMIN SECTION<br/>
-This briefing section can only be seen by the current admin.
-<br/><br/>
+Nothing special.
 ";
 
 // ====================================================================================

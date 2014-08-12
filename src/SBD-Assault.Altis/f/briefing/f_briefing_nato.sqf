@@ -21,9 +21,11 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Mission Creator: GRUBES
 <br/><br/>
-Made with F3 (http://www.ferstaberinde.com/f3/en/)
+Made with GPF (https://github.com/armash33p/blacksh33p)
+<br/>
+based on F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
 
 // ====================================================================================
@@ -33,7 +35,7 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+No logistical support.
 "]];
 
 // ====================================================================================
@@ -45,19 +47,20 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 COMMANDER'S INTENT
 <br/>
-*** Insert very short summary of plan here. ***
+Black Sh33p will close with the known CSAT position and destroy the enemy.
 <br/><br/>
 MOVEMENT PLAN
 <br/>
-*** Insert movement instructions here. ***
+Black Sh33p will move on foot using whatever infantry tactics the leaders deem
+fit for the situation.
 <br/><br/>
 FIRE SUPPORT PLAN
 <br/>
-*** Insert fire support instructions here. ***
+No fire support available.
 <br/><br/>
 SPECIAL TASKS
 <br/>
-*** Insert instructions for specific units here. ***
+No special tasking.
 "]];
 
 // ====================================================================================
@@ -67,7 +70,8 @@ SPECIAL TASKS
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+Black Sh33p will close with the known CSAT position and destroy the enemy using
+any infantry tactics leaders deem fit.
 "]];
 
 // ====================================================================================
@@ -77,15 +81,19 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+CSAT has established a <marker name=""m_obj"">fortified position</marker> SW of
+<marker name=""m_therisa"">Therisa</marker>. We expect this is in preparation
+for taking the city.
 <br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+CSAT infantry garrison at <marker name=""m_obj"">Objective Animal Farm</marker>
 <br/><br/>
 FRIENDLY FORCES
 <br/>
-*** Insert information about friendly forces here.***
+A small observation outpost, named <marker name=""m_obj"">OP Sh33p</marker> has
+been established and fortified just NE of <marker name=""m_zaros"">Zaros</marker>.
+No other friendly forces are in the area.
 "]];
 
 // ====================================================================================
